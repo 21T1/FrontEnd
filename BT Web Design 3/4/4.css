@@ -1,0 +1,39 @@
+article{
+	width: 680px;
+	height: 230px;
+}
+img{
+	float: left;
+	width: 355px;
+	height: 200px;
+	margin-right: 20px;
+}
+.content{
+	width: 305px;
+	display: inline-block;
+	font-family: 'Arial';
+}
+.content a{
+	text-decoration: none;
+}
+.title{
+	color: #D13177;
+	font-size: 18px;
+	font-weight: bold;
+}
+.content p{
+	margin-top: 10px;
+	font-size: 14px;
+}
+.other{
+	margin-top: 10px;
+}
+.content .other p{
+	font-size: 10px;
+	display: inline;
+}
+.content .other a{
+	color: #A24898;
+	font-size: 14px;
+	display: inline;
+}

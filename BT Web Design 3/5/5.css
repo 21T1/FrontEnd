@@ -1,0 +1,35 @@
+article{
+	width: 525px;
+	height: 125px;
+}
+img{
+	float: left;
+	width: 145px;
+	height: 110px;
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid #EEEEEE;
+}
+.content{
+	width: 355px;
+	display: inline-block;
+}
+a#title{
+	text-decoration: none;
+	color: #103950;
+	font-weight: bold;
+	font-size: 15px;
+}
+p{
+	margin: 2px 0 0 0;
+	font-size: 13px;
+	font-family: arial;
+}
+a#more{
+	color: grey;
+	float: right;
+	font-family: arial;
+	text-decoration: none;
+	font-size: 11px;
+	padding: 5px;
+}

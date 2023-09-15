@@ -1,0 +1,29 @@
+article{
+	width: 560px;
+	height: 385px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.content{
+	width: 125px;
+	height: 160px;
+	font-family: arial;
+}
+img{
+	width: 125px;
+	height: 118px;
+	border: 1px solid #EEEEEE;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+}
+p{
+	font-size: 13px;
+	color: #93BBBA;
+	font-weight: bold;
+	margin: 0;
+}

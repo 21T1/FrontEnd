@@ -1,0 +1,30 @@
+article{
+	width: 350px;
+	height: 205px;
+	padding: 0 5px 5px 5px;
+	background-color: #FEF1E1;
+	font-family: arial;
+}
+.container{
+	border-top: 3px solid #9F0F1A;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+.content{
+	margin-top: 10px;
+	display: flex;
+	border-bottom: 1px solid grey;
+}
+img{
+	width: 155px;
+	height: 115px;
+	float: left;
+	margin: 0 13px 16px 0;
+}
+p{
+	margin: 0;
+	font-size: 15px;
+	}
