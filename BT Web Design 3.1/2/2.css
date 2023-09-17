@@ -1,0 +1,34 @@
+article{
+	width: 760px;
+	height: 525px;
+	border-left: 15px solid #F2F2F2;
+	font-family: arial;
+	padding: 15px 0 15px 15px;
+}
+p{
+	font-size: 33px;
+	margin: 0px 0 18px;
+	color: #4e2243;
+}
+.content{
+	float: left;
+	display: block;
+	height: 225px;
+	width: 170px;
+	margin: 0 19px 26px 0;
+}
+img{
+	height: 170px;
+	width: 170px;
+	margin-bottom: 8px;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+.content p{
+	font-size: 13px;
+	color: #878787;
+	margin-top: 5px;
+}

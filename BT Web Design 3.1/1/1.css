@@ -1,0 +1,57 @@
+body{
+	font-family: arial;
+}
+.banner{
+	width: 683px;
+	height: 225px;
+}
+.banner img{
+	width: 450px;
+	height: 100%;
+	margin-right: 20px;
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+}
+p#cont{
+	line-height: 15px;
+	font-size: 14px;
+}
+p.time{
+	font-size: 12px;
+}
+p#tag{
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+	display: block;
+	font-size: 13px;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	width: 680px;
+	height: 265px;
+	margin-top: 15px;
+}
+.content{
+	width: 330px;
+	height: 100%;
+	border: 1px solid #EEEEEE;
+}
+.content img{
+	height: 165px;
+	width: 100%;
+}
+.content a{
+	padding: 5px 10px;
+	display: block;
+}
+.content p.time{
+	margin-top: 20px;
+	padding: 10px;	
+}

@@ -1,0 +1,39 @@
+article{
+	width: 673px;
+	height: 410px;	
+	margin: 50px;
+	border-top: 4px solid #CB544B;
+	font-family: arial;
+}
+h2{
+	margin: -15px 0 0 40px;
+	background: white;
+	font-size: 18px;
+	font-weight: bold;
+	color: #CB544B;	
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+}
+.container{
+	margin-top: 15px;
+}
+.content{
+	height: 185px;
+	width: 160px;
+	display: block;
+	margin: 0 11px 5px 0;
+	float: left;
+}
+#last{
+	margin-right: 0;
+}
+.content img{
+	width: 100%;
+	height: 120px;
+}
+.content p{
+	font-size: 12px;
+	margin: 17px 0 0 0;
+	line-height: 13px;
+}
