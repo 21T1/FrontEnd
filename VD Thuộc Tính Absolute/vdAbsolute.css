@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: tahoma;
+}
+.banner{
+	width: 1120px;
+}
+a.square{
+	height: 210px;
+	width: 280px;
+	background-color: green;
+	display: block;
+	position: relative;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+}
+a.square .layer1{
+	width: 280px;
+}
+a.square .layer2{
+	width: 280px;
+	height: 210px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+	transition: .4s;
+}
+a.square .layer2:hover{
+	opacity: 0.5;
+}
+a.square .layer3{
+	width: 254px;
+	padding: 8px 13px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	transition: .4s;
+	opacity: 0;
+}
+a.square:hover .layer3{
+	bottom: 20px;
+	opacity: 1;
+}
+a.bigger{
+	width: 560px;
+	height: 420px;
+}
+a.bigger .layer1{
+	width: 560px;
+}
+a.bigger .layer2{
+	width: 560px;
+	height: 420px;
+}
+a.bigger .layer3{
+	width: 534px;
+	font-size: 20px;
+}
