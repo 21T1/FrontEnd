@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.content{
+	width: 308px;
+	height: 240px;
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+}
+.content .layer1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.layer1 img{
+	width: 298px;
+	padding: 0px;
+	border: 5px solid #f8f1f7;
+}
+.layer1 a{
+	text-decoration: none;
+	color: black;
+	font-family: tahoma;
+	font-weight: bold;
+}
+.content .layer2{
+	position: absolute;
+	top: -7px;
+	left: 0;
+	z-index: 2;
+	height: 35px;
+	width: 307px;
+	background-image: url(border.png);
+	background-position: -2px -416px;
+}
+.layer2 h2{
+	display: none;
+}
