@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.title{
+	background-color: white;
+}
+.content{
+	margin: 0;
+}
+.content .row .card{
+	margin-bottom: 25px;
+}
+.footer .p{
+	style="color: grey;
+}
