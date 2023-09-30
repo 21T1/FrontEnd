@@ -1,0 +1,26 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+/*carousel*/
+.carousel-indicators{
+	top: 20px;
+	right: 15px;
+	left: auto;
+	margin: 0;
+	width: 25px;
+}
+.carousel-item img{
+	height: 500px!important;
+	object-fit: cover;
+}
+.carousel-control{
+	pointer-events: none;
+}
+.carousel-caption{
+	margin-bottom: 30px;
+}
+/*profile*/
+.profile img{
+	border-radius: 50%;
+}
