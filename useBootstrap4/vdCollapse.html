@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Example </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+ 	<link rel="stylesheet" href="1.css">
+</head>
+<body >
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-sm-8 push-sm-4">
+ 				<br><h2>Collapse</h2>
+ 				<div class="question">
+ 					<a class="btn btn-primary btn-block" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+ 						Question 1: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+ 					</a>
+				 	<div class="collapse" id="collapseExample1">
+				 		<div class="card card-block">
+				 			Answer: Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				 		</div>
+				 	</div>
+ 				</div> <!-- end question 1 -->
+ 				<div class="question">
+ 					<a class="btn btn-primary btn-block" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+ 						Question 2: Lorem ipsum dolor sit amet.
+ 					</a>
+				 	<div class="collapse" id="collapseExample2">
+				 		<div class="card card-block">
+				 			Anser 2:<br>
+				 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, voluptatibus asperiores, dolorum similique ipsam deleniti sed laudantium doloremque maxime, debitis quos ab fugiat accusantium, tenetur. Totam, veniam quia molestias placeat.
+				 		</div>
+				 	</div>
+ 				</div> <!-- end question 2 -->
+ 				<div class="question">
+ 					<a class="btn btn-primary btn-block" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+ 						Question 3: Dolores vitae iusto illum molestiae cumque alias animi rerum?
+ 					</a>
+				 	<div class="collapse" id="collapseExample3">
+				 		<div class="card card-block">
+				 			Anwser 3:
+				 			Lorem ipsum dolor sit amet consectetur adipisicing, elit.
+				 		</div>
+				 	</div>
+ 				</div> <!-- end question 3 -->
+ 			</div> <!-- end col -->
+ 
+ 			<div class="col-sm-4 pull-sm-8">
+ 				<br><h2>Collapse Accordion</h2>
+ 				<div id="accordion" role="tablist" aria-multiselectable="true">
+ 					<div class="panel panel-default">
+ 						<div class="panel-heading" role="tab" id="headingOne">
+ 							<h4 class="panel-title">
+ 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+ 									Collapsible Group Item #1
+ 								</a>
+ 							</h4>
+ 						</div>
+ 						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+ 							headingOne
+ 						</div>
+ 					</div>
+ 					<div class="panel panel-default">
+ 						<div class="panel-heading" role="tab" id="headingOne">
+ 							<h4 class="panel-title">
+ 								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+ 									Collapsible Group Item #2
+ 								</a>
+ 							</h4>
+ 						</div>
+ 						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+ 							headingTwo
+ 						</div>
+ 					</div>
+ 					<div class="panel panel-default">
+ 						<div class="panel-heading" role="tab" id="headingOne">
+ 							<h4 class="panel-title">
+ 								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+ 									Collapsible Group Item #3
+ 								</a>
+ 							</h4>
+ 						</div>
+ 						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+ 							headingThree
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div> <!-- end row -->
+ 	</div>
+</body>
+</html>
