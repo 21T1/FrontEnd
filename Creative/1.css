@@ -1,3 +1,6 @@
+:root{
+	--oranger-color: #F4623A;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -10,17 +13,46 @@ html, body{
 .header{
  	width: 100%;
  	height: 100%;
- 	background-image: url(images/header-bg.jpg);
+ 	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(images/header-bg.jpg);
  	background-size: cover;
+ 	overflow: hidden;
 }
 .header .menu{
- 	border-bottom: 1px solid grey;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*remove space of navbar (::after)*/
+.menu::after{
+	display: none;
+}
+/*change background color when scrolling*/
+.navbar.menu.bg-white{
+	background-color: white;
+	font-size: 12px;
+}
+.menu .navbar-brand{
+	color: rgba(255, 255, 255, .5);
+ 	font-weight: 700;
+}
+.menu .navbar-brand:hover{
+	color: white;
+}
+/*change text color when scrolling*/
+.menu .navbar-brand.text-black{
+	color: black;
+}
+.menu .navbar-nav li{
+    margin-left: 0;
 }
 .menu .navbar-nav li a{
  	font-weight: 700;
- 	text-transform: uppercase;
  	font-size: 13px;
  	padding: 0 16px;
+}
+/*change text color when scrolling*/
+.menu .navbar-nav.text-black li a{
+	color: black;
 }
 .banner{
  	color: white;
@@ -31,28 +63,33 @@ html, body{
  	position: relative;
  	padding-bottom: 30px;
 }
-.banner .title{
-	padding-top: 40%;
-}
 .title::after{
  	content: '';
- 	width: 100px;
+ 	width: 50px;
  	height: 3px;
- 	background: orange;
+ 	background: var(--oranger-color);
  	display: block;
  	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -50px;
+ 	left: 50%;
+ 	bottom: 0;
+ 	margin-left: -25px;
+}
+.banner .title{
+	padding-top: 30%;
+	font-size: 48px;
 }
 p.text{
 	font-size: 20px;
 	font-family: serif;
+	color: #ffffffbf;
+	padding-bottom: 20px;
 }
-a.btn{
+.btn{
  	padding: 15px 50px;
  	border-radius: 40px;
  	text-transform: uppercase;
+ 	background-color: var(--oranger-color);
+ 	color: white;
 }
 .about{
 	background-color: orange;
@@ -89,6 +126,62 @@ a.btn{
 	font-size: 5em;
 	color: orange;
 }
+.portfolio .box{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.box img{
+	width: 100%;
+}
+.box .caption{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: .4s;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(240, 95, 64, 0.55);
+	color: white;
+	font-size: 28px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box .category{
+	font-style: italic;
+	font-size: 15px;
+}
+.portfolio .box:hover .caption{
+	opacity: 1;
+}
+.no-gutter [class*='col-']{
+	padding: 0;
+}
+.download{
+	background-color: black;
+	color: white;
+	padding-bottom: 90px;
+}
+.download .title::after{
+	display: none;
+}
+.download a.btn{
+	background-color: white;
+	color: black;
+}
+.contact{
+	padding-bottom: 90px;
+}
+.contact i{
+	font-size: 50px;
+}
+
 @media(max-width: 576px){
  	.navbar-brand{
  		font-size: 50px;
@@ -112,6 +205,8 @@ a.btn{
 
 }
 
-@media(min-width: 767px and max-width: 992px){
-
+@media(max-width: 992px){
+	.banner .title{
+		font-size: 36px!important;
+	}
 }
