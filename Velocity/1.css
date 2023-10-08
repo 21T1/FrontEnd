@@ -1,0 +1,61 @@
+:root{
+	--orange-color: #EC6952;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.header{
+	height: 700px;
+	background-image: url(images/header/bg-1.jpg);
+	background-size: cover;
+}
+.header .navbar-brand.logo{
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: var(--orange-color);
+	padding: 15px 30px;
+	margin-top: -8px;
+	border-radius:  0 0 5px 5px;
+} 
+.header .menu .nav-link{
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	transition: .4s;
+}
+.header .menu .nav-link:hover{
+	color: var(--orange-color);
+}
+.header .menu .nav-item.active .nav-link{
+	color: var(--orange-color);
+}
+.header .menu .btn.sign-up{
+	margin-top: 8px;
+	border: 1px solid white;
+	padding: 8px 10px;
+	transition: .4s;
+}
+.header .btn.sign-up:hover{
+	border: 1px solid var(--orange-color);
+	background-color: var(--orange-color);
+	color: white;
+}
+
+@media(max-width: 576px){
+	.header .logo{
+		margin-left: 90px;
+	}
+	.header .menu{
+		background-color: #253340;
+		width: 100%;
+		padding: 15px 15px 30px;
+	}
+	.header .menu .btn.sign-up{
+		display: inline-block;
+		font-weight: 600;
+	}
+}
