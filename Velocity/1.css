@@ -10,6 +10,11 @@
 	height: 700px;
 	overflow: hidden;
 }
+.header .navbar.bg-light{
+	background-color: white;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	color: black;
+}
 .header .navbar-brand.logo{
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
@@ -19,13 +24,21 @@
 	margin-top: -8px;
 	margin-right: 0;
 	border-radius:  0 0 5px 5px;
+	transition: .4s;
 } 
+.header .navbar-brand.logo.change-logo{
+	background-color: white;
+	color:  var(--orange-color);
+}
 .header .menu .nav-link{
 	text-transform: uppercase;
 	padding: 15px;
 	font-size: 13px;
 	color: white;
 	transition: .4s;
+}
+.header .menu.change-menu .nav-link{
+	color: grey;
 }
 .header .menu .nav-link:hover{
 	color: var(--orange-color);
@@ -38,6 +51,11 @@
 	border: 1px solid white;
 	padding: 8px 10px;
 	transition: .4s;
+}
+.header .menu.change-menu .btn.sign-up{
+	background-color: var(--orange-color);
+	border: 1px solid var(--orange-color);
+	color: white;
 }
 .header .btn.sign-up:hover{
 	border: 1px solid var(--orange-color);
@@ -148,8 +166,57 @@
 .content .more .btn:hover{
 	background-color: var(--orange-color);
 }
-.slide{
+
+/*slide*/
+.slides{
 	background-color: #f5f5f5;
+	padding: 60px 0 120px 0;
+}
+.slides .title h3{
+	font-size: 32px;
+	font-weight: 300;
+}
+.slides ol.carousel-indicators{
+	bottom: -60px;
+}
+.slides .carousel-indicators li.active{
+	background-color: var(--orange-color);
+	border: none;
+}
+.slides .carousel-indicators li{
+	background-color: #E0E0E0;
+	border: none;
+}
+.slides .blockquote{
+	border: none;
+	padding-left: 0;
+	font-weight: 300;
+}
+.slides .blockquote-footer::before{
+	display: none;
+}
+.slides .blockquote-footer p{
+	color: var(--orange-color);
+}
+.slides .icon i{
+	font-size: 25px;
+	color: var(--orange-color);
+}
+.scroll-top{
+	transition: .4s;
+	border-radius: 50%;
+	background-color: #5d80a1;
+	border: none;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+	padding: 7px 10px;
+	margin: 0 10px 10px 0;
+	opacity: 1;
+}
+.scroll-top i{
+	font-size: 20px;
+}
+.scroll-top.hidden{
+	opacity: 0;
 }
 @media(max-width: 576px){
 	.header .menu-fixed{
